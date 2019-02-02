@@ -1,0 +1,14 @@
+$fw: (
+ Regular: 400,
+ Bold: 700
+);
+
+@each $name, $val in $fw {
+  @font-face {
+    font-weight: $val;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/OpenSans-#{$name}.woff2") format("woff2"), url("../fonts/OpenSans-#{$name}.woff") format("woff");
+  }
+}
