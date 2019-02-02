@@ -22,5 +22,10 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "run-sequence": "^2.2.1"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 10",
+    "Firefox ESR"
+  ]
 }

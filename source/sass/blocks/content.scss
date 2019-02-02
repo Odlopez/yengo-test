@@ -1,8 +1,26 @@
 .content {
-  width: 1164px;
   display: grid;
+  width: 1164px;
+  margin: 0 auto;
+
+  grid-auto-rows: auto;
   grid-gap: 24px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: auto;
-  margin: 0 auto;
+}
+
+@include tablet {
+  .content {
+    width: 604px;
+
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include mobile {
+  .content {
+    width: 288px;
+
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
+  }
 }
